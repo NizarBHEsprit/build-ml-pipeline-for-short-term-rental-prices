@@ -64,10 +64,18 @@ def go(config: DictConfig):
             )
 
         if "data_check" in active_steps:
-            ##################
-            # Implement here #
-            ##################
-            pass
+            _ = mlflow.run(
+                os.path.join(hydra.utils.get_original_cwd(), "src", "data_check"),
+                "main",
+                parameters={
+                    "input_artifact": "clean_sample.csv:latest",
+                    "output_artifact": "data_check.json",
+                    "output_type": "data_check",
+                    "output_description": "Data check results",
+                    "ks_alpha": config['etl']['ks_alpha'],
+                    "target_column": config['etl']['target_column']
+                },
+            )
 
         if "data_split" in active_steps:
             ##################
