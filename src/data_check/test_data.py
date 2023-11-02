@@ -66,6 +66,7 @@ def test_row_count(data):
     """
     assert 15000 < data.shape[0] < 1000000
 
+
 def test_price_range(data, min_price, max_price):
     """
     Test that the price range is between min_price and max_price
