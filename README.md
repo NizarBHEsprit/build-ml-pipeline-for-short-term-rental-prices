@@ -32,14 +32,14 @@ In this project you will build such a pipeline.
 - [Cleaning up](#cleaning-up)
 
 ## Preliminary steps
-### Fork the Starter kit
-Go to [https://github.com/udacity/build-ml-pipeline-for-short-term-rental-prices.git](https://github.com/udacity/build-ml-pipeline-for-short-term-rental-prices.git)
-and click on `Fork` in the upper right corner. This will create a fork in your Github account, i.e., a copy of the
-repository that is under your control. Now clone the repository locally so you can start working on it:
+### How to use
 
 ```
-git clone https://github.com/[your github username]/build-ml-pipeline-for-short-term-rental-prices.git
+git clone https://github.com/NizarBHEsprit/build-ml-pipeline-for-short-term-rental-prices.git
 ```
+
+### W&B Pipeline Results
+The pipeline results and runs could be found in the following [link](https://wandb.ai/nb-hmida/nyc_airbnb?workspace=user-nb-hmida)
 
 and go into the repository:
 
